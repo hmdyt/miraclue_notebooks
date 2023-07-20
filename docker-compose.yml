@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  notebook:
+    image: atlasopendata/root_notebook
+    ports:
+      - '8888:8888'
+    environment:
+      - JUPYTER_ENABLE=LAB=yes
+    volumes:
+      - /nadb60/miraclue/analysis:/analysis
